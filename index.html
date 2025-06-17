@@ -1,42 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My First HTML Page</title>
-    <link rel="stylesheet" href="public_html/css/style.css">
+    <style>
+    .container {
+        width:780px;
+        margin: 5px auto 5px auto;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #EEEEEE;
+    }
+    .courses {
+    	width:110px;
+    	float: left;
+    	margin: 10px;
+    }
+    .news {
+	    width:240px;
+
+	    float: left;
+	    margin: 10px;
+    }
+    .onsite {
+	    width:190px;
+
+	    float: left;
+	    margin: 10px;
+    }
+    .newsletter {
+	    width:150px;
+
+	    float: left;
+	    margin: 10px;
+    }  
+       .clearfloat {
+	    clear: both;
+    } 
+</style>
+<link href='public_html/css/style.css' rel='stylesheet' type='text/css'>
 </head>
-<body class="small">
-    <img src="/public_html/images/head_01.jpg" alt="Head">
-
-    <h1>Courses</h1>
-    <img src="/public_html/images/train_img.jpg">
-    <br/>
-    <a href="/public_html/courses/courselisting.html">Popular IT Courses</a><br/>
-    - ITIL<br/>
-    - Scrum<br/>
-    - <a href="/public_html/courses/java.html">Java</a><br/>
-    - Software Testing<br/>
-    - Ethical Hacking<br/>
-    - OOAD Using UML<br/>
-    
-    <h1>News</h1>
-    <img src="/public_html/images/promo_img.jpg">
-    <img src="/public_html/images/course_itil_home.png">
-    <h2>ActiveLearning Launches ITIL Foundation Certification Training in the Philippines</h2>
-    <p>ActiveLearning now offers a training program that gives professionals the opportunity to prepare for,
-    and then take the IT Infrastructure Library (ITIL) Certification exam.</p>
-    <a href>Learn More</a>
-
-    <br/>
-    <h1>On-Site Training</h1>
-    <img src="/public_html/images/onsite_img.jpg">
-    <p>For cost-effective team training at your location, we bring the classes to you.</p>
-    <a href>Learn</a>
-
-<br/>
-<h1>Newsletter</h1>
-<img src="/public_html/images/news_img.jpg">
-<p>Sign up and stay informed on new courses and promos.</p>
-
-
+<body>
+    <div class="container">
+        <img src="public_html/images/head_01.jpg">
+        <div class="courses"> 
+		<h1>Courses</h1>
+		<img src="public_html/images/train_img.jpg" /><br />
+		<a href="public_html/courses/courselisting.html">Popular IT Courses</a><br />
+			- ITIL<br />
+			- Scrum<br />
+			- <a href="public_html/courses/java.html">Java</a><br />
+			- Software Testing<br />
+			- Ethical Hacking<br />
+			- OOAD Using UML<br />
+	</div>
+	<div class="news"> 
+		<h1>News</h1>
+		<img src="public_html/images/promo_img.jpg" />
+		<img src="public_html/images/course_itil_home.png" />
+		<h2>ActiveLearning Launches ITIL Foundation Certification Training in the Philippines</h2>
+		<p>ActiveLearning now offers a training program that gives professionals the opportunity to prepare for, and then take the IT Infrastructure Library (ITIL) Certification exam. </p>
+		<a href="">Learn More</a>
+	</div>
+	<div class="onsite">
+		<h1>On-Site Training</h1>
+		<img src="public_html/images/onsite_img.jpg" />
+		<p>For cost-effective team training at your location, we bring the classes to you.</p>
+		<a href="">Learn More</a>	
+	
+	</div>
+	<div class="newsletter">
+	<h1>Newsletter</h1>
+		<img src="public_html/images/news_img.jpg" />
+		<p>Sign up and stay informed on new courses and promos. </p>
+	
+	</div>
+    <div class="clearfloat"></div>
 </body>
 </html>
